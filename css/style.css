@@ -4,6 +4,9 @@
 }
 .bayan_items {
 }
+.bayan_item {
+    width: 100%;
+}
 
 .bayan_list {
     list-style: none;
@@ -15,26 +18,37 @@
   padding: 20px;
   position: relative;
 }
-.bayan_item {
- 
+.bayan_title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
- li::before {
-    content: "+";
+.plus {
     width: 20px;
     height: 20px;
-    position: absolute; 
-    top: 50%;
-    right: 0;
     transform: rotate(0deg);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s;
 }
-li:hover::before {
-    transform: translate(-50%, -50%) rotate(45deg) translate(50%, 50%);
+.bayan_item:hover .plus {
+    transform: rotate(-45deg);
+}
+.bayan_item .bayan_img {
+    width: 0px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform-origin: center center;
+    
 }
 
+.bayan_item:hover .bayan_img {
+    width: 300px;
+    opacity: 1;
+    transform: scale(1.1);
+}
 
 .bayan_title {
     padding: 0 0 20px 0;
+    height: 40px;
 }
 .bayan_img {
    
