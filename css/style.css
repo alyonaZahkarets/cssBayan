@@ -1,0 +1,44 @@
+.bayan {
+    display: flex;
+    flex-direction: column;
+}
+.bayan_items {
+}
+
+.bayan_list {
+    list-style: none;
+}
+.bayan_list li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #9b9898;
+  padding: 20px;
+  position: relative;
+}
+.bayan_item {
+ 
+}
+ li::before {
+    content: "+";
+    width: 20px;
+    height: 20px;
+    position: absolute; 
+    top: 50%;
+    right: 0;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+li:hover::before {
+    transform: translate(-50%, -50%) rotate(45deg) translate(50%, 50%);
+}
+
+
+.bayan_title {
+    padding: 0 0 20px 0;
+}
+.bayan_img {
+   
+}
+.bayan_img:hover {
+
+}
