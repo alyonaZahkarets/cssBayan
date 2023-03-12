@@ -1,8 +1,10 @@
 .bayan {
     display: flex;
     flex-direction: column;
+    background-color: rgb(246, 233, 218);
 }
 .bayan_items {
+    cursor: pointer;
 }
 .bayan_item {
     width: 50%;
@@ -18,25 +20,35 @@
   padding: 20px;
   position: relative;
 }
+
 .bayan_title {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+.bayan_item:hover .bayan_title {
+    color:blue;
+}
 .plus {
     width: 20px;
     height: 20px;
+    font-weight: bold;
     transform: rotate(0deg);
     transition: transform 0.5s;
+    cursor: pointer;
 }
 .bayan_item:hover .plus {
     transform: rotate(-45deg);
+    font-weight: bold;
+    color:black;
 }
+
 .bayan_item .bayan_img {
     width: 0px;
     opacity: 0;
     transition: opacity 0.5s, transform 0.5s;
     transform-origin: center center;
+    cursor: pointer;
     
 }
 
