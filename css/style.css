@@ -1,13 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 0 20px 0 0;
+}
+h1 {
+    padding: 15px;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(230, 216, 200);
+}
 .bayan {
     display: flex;
+    max-width: 75%;
     flex-direction: column;
+    justify-content: center;
     background-color: rgb(246, 233, 218);
+    margin: 0 auto;
+    overflow: hidden;
 }
 .bayan_items {
     cursor: pointer;
 }
 .bayan_item {
-    width: 50%;
+    width: 100%;
 }
 
 .bayan_list {
@@ -16,7 +36,7 @@
 .bayan_list li {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #9b9898;
+  border-bottom: 2px solid #9b9898;
   padding: 20px;
   position: relative;
 }
@@ -27,7 +47,7 @@
     justify-content: space-between;
 }
 .bayan_item:hover .bayan_title {
-    color:blue;
+    color:rgb(112, 112, 132);
 }
 .plus {
     width: 20px;
@@ -44,14 +64,13 @@
 }
 
 .bayan_item .bayan_img {
-    width: 0px;
+    width: 0;
     opacity: 0;
     transition: opacity 0.5s, transform 0.5s;
-    transform-origin: center center;
     cursor: pointer;
+    margin-left: 30%;
     
 }
-
 .bayan_item:hover .bayan_img {
     width: 300px;
     opacity: 1;
@@ -61,10 +80,4 @@
 .bayan_title {
     padding: 0 0 20px 0;
     height: 40px;
-}
-.bayan_img {
-   
-}
-.bayan_img:hover {
-
 }
